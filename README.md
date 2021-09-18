@@ -3,12 +3,14 @@
 <!-- ls stacks -->
 npx cdk ls
 <!-- Deploy Stack -->
-STACK=Beta/Grapevine npx cdk deploy $STACK
+STACK=Beta/Grapevine && npx cdk deploy $STACK --profile grapevine
 
-<!-- Bootstrap new account for stage -->
+<!-- Bootstrap new account/regions for stage -->
 npx cdk bootstrap \
+  --profile grapevine \
+  --trust 142192868872 \
   --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess \
-  aws://DEVELOPER_ACCOUNT/us-east-1
+  aws://142192868872/us-west-2
 
 # Welcome to your CDK TypeScript project!
 
