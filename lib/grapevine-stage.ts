@@ -10,7 +10,7 @@ export class GrapevineStage extends Stage {
   constructor(scope: Construct, id: string, props?: StageProps) {
     super(scope, id, props);
 
-    const service = new GrapevineCdkStack(this, 'WebService');
+    const service = new GrapevineCdkStack(this, 'Grapevine');
     
     // Expose CdkpipelinesDemoStack's output one level higher
     // this.urlOutput = service.urlOutput;

@@ -1,3 +1,15 @@
+# DEV
+
+<!-- ls stacks -->
+npx cdk ls
+<!-- Deploy Stack -->
+STACK=Beta/Grapevine npx cdk deploy $STACK
+
+<!-- Bootstrap new account for stage -->
+npx cdk bootstrap \
+  --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess \
+  aws://DEVELOPER_ACCOUNT/us-east-1
+
 # Welcome to your CDK TypeScript project!
 
 This is a blank project for TypeScript development with CDK.
