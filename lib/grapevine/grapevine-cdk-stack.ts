@@ -6,8 +6,12 @@ export class GrapevineCdkStack extends cdk.Stack {
     super(scope, id, props);
 
     // The code that defines your stack goes here
-    new s3.Bucket(this, 'id', {
-      bucketName: 'test-buck19773562',
+    // new s3.Bucket(this, 'id', {
+    //   bucketName: 'test-buck19773562',
+    //   removalPolicy: cdk.RemovalPolicy.DESTROY
+    // })
+    new s3.Bucket(this, 'gvDiscoverBuck', {
+      bucketName: 'grapevine-discover',
       removalPolicy: cdk.RemovalPolicy.DESTROY
     })
   }

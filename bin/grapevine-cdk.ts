@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { GrapevineCdkStack } from '../lib/grapevine-cdk-stack';
+import { GrapevineCdkStack } from '../lib/grapevine/grapevine-cdk-stack';
 // import { CdkpipelinesDemoPipelineStack } from '../lib/cdkpipelines-demo-pipeline-stack';
 import { GrapevinePipelineStack } from '../lib/grapevine-pipeline-stack';
 import { GrapevineStage } from '../lib/grapevine-stage';

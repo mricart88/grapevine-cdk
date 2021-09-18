@@ -1,5 +1,5 @@
 import { CfnOutput, Construct, Stage, StageProps } from '@aws-cdk/core';
-import { GrapevineCdkStack } from './grapevine-cdk-stack';
+import { GrapevineCdkStack } from './grapevine/grapevine-cdk-stack';
 
 /**
  * Deployable unit of web service app
