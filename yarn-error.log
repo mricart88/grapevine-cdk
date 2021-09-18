@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/marioricart/.nvm/versions/node/v12.16.1/bin/node /Users/marioricart/.nvm/versions/node/v12.16.1/bin/yarn add @aws-cdk/s3
+  /Users/marioricart/.nvm/versions/node/v12.16.1/bin/node /Users/marioricart/.nvm/versions/node/v12.16.1/bin/yarn add @types/aws-cdk
 
 PATH: 
   /Users/marioricart/.rbenv/shims:/Users/marioricart/.nvm/versions/node/v12.16.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/marioricart/.rbenv/shims:/Users/marioricart/.nvm/versions/node/v12.16.1/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@aws-cdk%2fs3: Not found
+  Error: https://registry.yarnpkg.com/@types%2faws-cdk: Not found
       at Request.params.callback [as _callback] (/Users/marioricart/.nvm/versions/node/v12.16.1/lib/node_modules/yarn/lib/cli.js:66987:18)
       at Request.self.callback (/Users/marioricart/.nvm/versions/node/v12.16.1/lib/node_modules/yarn/lib/cli.js:140748:22)
       at Request.emit (events.js:311:20)
@@ -52,6 +52,7 @@ npm manifest:
     "dependencies": {
       "@aws-cdk/aws-apigateway": "^1.123.0",
       "@aws-cdk/aws-lambda": "^1.123.0",
+      "@aws-cdk/aws-s3": "^1.123.0",
       "@aws-cdk/core": "^1.123.0",
       "@aws-cdk/pipelines": "^1.123.0",
       "@types/aws-lambda": "^8.10.83",
@@ -615,7 +616,7 @@ Lockfile:
       "@aws-cdk/cx-api" "1.123.0"
       constructs "^3.3.69"
   
-  "@aws-cdk/aws-s3@1.123.0":
+  "@aws-cdk/aws-s3@1.123.0", "@aws-cdk/aws-s3@^1.123.0":
     version "1.123.0"
     resolved "https://registry.yarnpkg.com/@aws-cdk/aws-s3/-/aws-s3-1.123.0.tgz#448cdf0509bb3b40cf1e9e1b6d609201ff48164c"
     integrity sha512-NCkfZJUlFYGUeCc+ciFzYyfS0iuvqEydbFx2lcotkc4vYbvn9hfLS/uOSYXPjU+gJXrGaECxlyguLUBfCA2OaA==
