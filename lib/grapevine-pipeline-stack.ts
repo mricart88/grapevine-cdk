@@ -1,5 +1,6 @@
-import { Construct, SecretValue, Stack, StackProps } from '@aws-cdk/core';
+import { Construct, Stack, StackProps } from '@aws-cdk/core';
 import { CodePipeline, CodePipelineSource, ShellStep } from "@aws-cdk/pipelines";
+
 import { GrapevineStage } from './grapevine-stage';
 
 /**
@@ -26,12 +27,10 @@ export class GrapevinePipelineStack extends Stack {
          ],
        }),
     });
-
     // for stage in stages{
     const stage = new GrapevineStage(this, 'Beta', {
         env: { account: '142192868872', region: 'us-west-2' }
     });
-    // }
 
     pipeline.addStage(stage);
 

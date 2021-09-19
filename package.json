@@ -18,10 +18,14 @@
     "jest": "^25.5.0",
     "ts-jest": "^25.3.1",
     "ts-node": "^8.1.0",
-    "typescript": "~3.7.2"
+    "typescript": "^3.8"
   },
   "dependencies": {
     "@aws-cdk/aws-apigateway": "^1.123.0",
+    "@aws-cdk/aws-cloudfront": "^1.123.0",
+    "@aws-cdk/aws-codepipeline": "^1.123.0",
+    "@aws-cdk/aws-codepipeline-actions": "^1.123.0",
+    "@aws-cdk/aws-cognito": "^1.123.0",
     "@aws-cdk/aws-lambda": "^1.123.0",
     "@aws-cdk/aws-s3": "^1.123.0",
     "@aws-cdk/core": "^1.123.0",

@@ -1,8 +1,10 @@
 import * as cdk from '@aws-cdk/core';
 import * as s3 from '@aws-cdk/aws-s3';
 
+import { GrapevineReactSPAWeb } from './constructs/grapevine-react-spa-s3';
+
 export class GrapevineCdkStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: cdk.Construct, id: string, stageName: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
     // The code that defines your stack goes here
@@ -14,5 +16,8 @@ export class GrapevineCdkStack extends cdk.Stack {
       bucketName: 'grapevine-discover',
       removalPolicy: cdk.RemovalPolicy.DESTROY
     })
+
+    new GrapevineReactSPAWeb(this, stageName);
+
   }
 }
