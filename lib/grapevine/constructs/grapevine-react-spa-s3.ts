@@ -15,7 +15,7 @@ interface GrapevineReactWebAppProps {
 }
 
 export class GrapevineReactSPAWeb {
-    public stage: GrapevineStage;
+    public stage_name: string;
     public stack: Construct;
     public bucket: Bucket;
     public authorizer_edge_lambda: cloudfront.experimental.EdgeFunction;
@@ -24,9 +24,9 @@ export class GrapevineReactSPAWeb {
     public cognito_client: cognito.UserPoolClient;
     public codepipeline: codepipeline.Pipeline;
 
-    constructor(stack: Construct, stage: GrapevineStage, props?: GrapevineReactWebAppProps){
+    constructor(stack: Construct, stageName: string, props?: GrapevineReactWebAppProps){
         this.stack = stack;
-        this.stage = stage;
+        this.stage_name = stageName;
 
         this.bucket = this.createGrapevineWebAppBucket();
         this.codepipeline = this.createCodePipeline();
@@ -38,7 +38,7 @@ export class GrapevineReactSPAWeb {
 
     createGrapevineWebAppBucket(){
         // Amazon S3 bucket to store CRA website
-        return S3Resources.createGrapevineWebAppBucket(this.stack, this.stage);
+        return S3Resources.createGrapevineWebAppBucket(this.stack, this.stage_name);
     }
 
     createCognitoClient(){
@@ -91,7 +91,7 @@ export class GrapevineReactSPAWeb {
 
         // SOURCE
         pipeline.addStage({
-            stageName: `${this.stage.stageName.toLowerCase()}-GVReactSPA-Source`,
+            stageName: `${this.stage_name.toLowerCase()}-GVReactSPA-Source`,
             actions: [
                 new codepipeline_actions.GitHubSourceAction({
                     actionName: "Checkout",
@@ -106,7 +106,7 @@ export class GrapevineReactSPAWeb {
 
         // BUILD
         pipeline.addStage({
-            stageName: `${this.stage.stageName.toLowerCase()}-GVReactSPA-Build`,
+            stageName: `${this.stage_name.toLowerCase()}-GVReactSPA-Build`,
             actions: [
                 // AWS CodePipeline action to run CodeBuild project
                 new codepipeline_actions.CodeBuildAction({
