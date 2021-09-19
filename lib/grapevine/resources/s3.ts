@@ -1,5 +1,5 @@
 import { Bucket } from '@aws-cdk/aws-s3';
-import { Construct } from '@aws-cdk/core';
+import { Construct, RemovalPolicy } from '@aws-cdk/core';
 
 export class S3Resources {
     public stage_name: string;
@@ -16,7 +16,8 @@ export class S3Resources {
         return new Bucket(stack, "GrapevineWebAppBucket", {
             websiteIndexDocument: "index.html",
             websiteErrorDocument: "error.html",
-            bucketName: `${stageName.toLowerCase()}-grapevine-web-app-bucket`
+            bucketName: `${stageName.toLowerCase()}-grapevine-web-app-bucket`,
+            removalPolicy: RemovalPolicy.DESTROY
         });
     }
 }

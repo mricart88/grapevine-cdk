@@ -6,7 +6,6 @@ import * as codepipeline_actions from "@aws-cdk/aws-codepipeline-actions";
 import * as codepipeline from "@aws-cdk/aws-codepipeline";
 import * as codebuild from "@aws-cdk/aws-codebuild";
 
-import { GrapevineStage } from '../../grapevine-stage';
 import { S3Resources } from '../resources/s3';
 import { CloudfrontResources } from '../resources/cloudfront';
 import { CognitoResources } from '../resources/cognito';
@@ -114,7 +113,7 @@ export class GrapevineReactSPAWeb {
                     project: new codebuild.PipelineProject(this.stack, "BuildReactWebsiteGV", {
                     projectName: "BuildGvWeb",
                     buildSpec: codebuild.BuildSpec.fromSourceFilename(
-                        "../resources/buildspec.yml"
+                        "./codebuild/buildspec.yml"
                     ),
                     }),
                     input: outputSources,
