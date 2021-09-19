@@ -5,6 +5,7 @@ import { GrapevineStage } from './grapevine-stage';
 
 /**
  * The stack that defines the application pipeline
+  DOCS: https://aws.amazon.com/blogs/developer/cdk-pipelines-continuous-delivery-for-aws-cdk-applications/
  */
 export class GrapevinePipelineStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {

@@ -77,6 +77,8 @@ export class GrapevineReactSPAWeb {
     }
 
     createCodePipeline(){
+        // DOCS: https://sbstjn.com/blog/deploy-react-cra-with-cdk-codepipeline-and-codebuild/
+
         // AWS CodePipeline pipeline
         const pipeline = new codepipeline.Pipeline(this.stack, "GvSPAReactCodePipeline", {
             pipelineName: "WebReactSPAGv",
