@@ -14,5 +14,6 @@ export class GrapevineCdkStack extends cdk.Stack {
       bucketName: 'grapevine-discover',
       removalPolicy: cdk.RemovalPolicy.DESTROY
     })
+
   }
 }
