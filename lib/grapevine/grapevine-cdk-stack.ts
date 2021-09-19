@@ -17,7 +17,7 @@ export class GrapevineCdkStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY
     })
 
-    new GrapevineReactSPAWeb(this, stageName);
+    // new GrapevineReactSPAWeb(this, stageName);
 
   }
 }
