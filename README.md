@@ -3,7 +3,7 @@
 <!-- ls stacks -->
 npx cdk ls
 <!-- Deploy Stack -->
-STACK=Beta/Grapevine && npx cdk deploy $STACK --profile grapevine
+STACK=Pipeline/Beta/Grapevine && npx cdk deploy $STACK --profile grapevine
 
 <!-- Bootstrap new account/regions for stage -->
 npx cdk bootstrap \
