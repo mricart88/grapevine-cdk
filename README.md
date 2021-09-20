@@ -12,6 +12,13 @@ npx cdk bootstrap \
   --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess \
   aws://142192868872/us-west-2
 
+<!-- Bootstrap pipeline -->
+npx cdk bootstrap \
+  --profile grapevine \
+  --trust 142192868872 \
+  --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess \
+  aws://142192868872/us-east-2
+
 # Welcome to your CDK TypeScript project!
 
 This is a blank project for TypeScript development with CDK.
