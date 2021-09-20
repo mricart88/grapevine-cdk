@@ -91,7 +91,7 @@
     "@aws-cdk/core" "1.123.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-certificatemanager@1.123.0":
+"@aws-cdk/aws-certificatemanager@1.123.0", "@aws-cdk/aws-certificatemanager@^1.123.0":
   version "1.123.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-certificatemanager/-/aws-certificatemanager-1.123.0.tgz#c56d9c21eea181d54ddf6414ef153bc3b1348c61"
   integrity sha512-iY/aqr9h6nCEmbxLMO7cpJH9nJ55UDlSWOdF7ig6rokmapQKcM8XiImaJryTwnicv3y2zIgVJYrGdkKHT0tjZw==
@@ -419,7 +419,7 @@
     "@aws-cdk/custom-resources" "1.123.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-iam@1.123.0":
+"@aws-cdk/aws-iam@1.123.0", "@aws-cdk/aws-iam@^1.123.0":
   version "1.123.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iam/-/aws-iam-1.123.0.tgz#34190e0d70bb5ab0a64044b1d5a99ad4cde068d7"
   integrity sha512-2BCbfeeO0xYn4FdOWboI+88zW+W5Mc2uZnz4elXcNFesY1FTVicqtgL5XdKx/fsYJoCqtmgn5V/960fxUCmWFQ==
@@ -524,7 +524,7 @@
     "@aws-cdk/region-info" "1.123.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-route53@1.123.0":
+"@aws-cdk/aws-route53@1.123.0", "@aws-cdk/aws-route53@^1.123.0":
   version "1.123.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-route53/-/aws-route53-1.123.0.tgz#aff44ab383377be9302b87a10072e4826d0e6cee"
   integrity sha512-J3QtyfWIqDTO8smKf9cZ5yOHsNKm88v/cslsCuJ1FtEbJ0xen+fNm6L3pJ5b+yRgjyqUtWBafmbUyJW6WV9WDA==
@@ -570,7 +570,7 @@
     "@aws-cdk/core" "1.123.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-secretsmanager@1.123.0":
+"@aws-cdk/aws-secretsmanager@1.123.0", "@aws-cdk/aws-secretsmanager@^1.123.0":
   version "1.123.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-secretsmanager/-/aws-secretsmanager-1.123.0.tgz#1d7e419b8eab750dfe4616100905d79507a2d4ad"
   integrity sha512-IU5K+ugKV3JiOAxrcT2ucZyTmTQfaTkMGd6veAtOKIqubyUS1H735LS5YK0P5sgWdewpCYBbYupOtqUVs0GOhQ==

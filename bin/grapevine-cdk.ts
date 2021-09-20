@@ -8,7 +8,7 @@ import { GrapevinePipelineStack } from '../lib/grapevine-pipeline-stack';
 const app = new cdk.App();
 // new GrapevineCdkStack(app, 'GrapevineCdkStack');
 
-const pipeline = new GrapevinePipelineStack(app, 'CdkpipelinesDemoPipelineStack', {
+const pipeline = new GrapevinePipelineStack(app, 'Pipeline', {
   env: { account: '142192868872', region: 'us-east-2' },
 });
 
